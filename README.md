@@ -1,63 +1,33 @@
-# 🎓 Student Marks Predictor (Machine Learning Project)
+# 🎓 Students Marks Predictor
 
-This project is an end-to-end **Machine Learning application** that predicts a student's **final marks (G3)** based on academic and behavioral features using supervised learning techniques.
+A Machine Learning web app that predicts a student's final marks (G3) using academic and study-related factors.
 
----
+## 🚀 Features
+- Predicts final marks out of 20
+- Shows percentage and performance feedback
+- Clean UI built with Streamlit
+- Machine Learning model: Decision Tree
 
-## 📌 Project Overview
-- Performed data cleaning and exploratory data analysis (EDA)
-- Selected important features affecting student performance
-- Trained multiple regression models
-- Compared models using MAE and R² score
-- Selected the **best-performing model**
-- Saved the trained model and validated predictions manually
-- Uploaded the complete project to GitHub
+## 🧠 Input Parameters
+- First Period Grade (G1)
+- Second Period Grade (G2)
+- Weekly Study Time
+- Number of Past Failures
+- Number of Absences
 
----
+## 🛠 Tech Stack
+- Python
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
 
-## 📊 Dataset
-- Source: Student Performance Dataset
-- File: `students.csv`
-- Rows: 395
-- Target Variable: **G3 (Final Grade)**
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+streamlit run app.py
 
-### Features Used:
-- `G1` – First period grade  
-- `G2` – Second period grade  
-- `studytime` – Weekly study time  
-- `failures` – Number of past failures  
-- `absences` – Number of absences  
+##  STEP 5: Check Git Status
 
----
-
-## 🧠 Machine Learning Models Used
-The following models were trained and evaluated:
-
-| Model | MAE | R² Score |
-|------|-----|----------|
-| Linear Regression | ~1.33 | ~0.78 |
-| Decision Tree Regressor | ⭐ **~0.96** | ⭐ **~0.89** |
-| Random Forest Regressor | ~1.05 | ~0.87 |
-| Gradient Boosting | ~1.06 | ~0.85 |
-
-✅ **Decision Tree Regressor** was selected as the final model due to lowest MAE and highest R² score.
-
----
-
-## 🔍 Model Evaluation
-- Predictions were compared with actual test values
-- Predicted scores were rounded to integers for realistic interpretation
-- Manual validation showed most predictions within **±1 to ±2 marks**
-
----
-
-## 💾 Saved Files
-- `students_marks_model.pkl` → Trained Decision Tree model
-- `model_features.pkl` → Feature list used during training
-
----
-
-## ▶️ How to Run the Project
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Parth-Coder5/student-marks-predictor.git
+```bash
+git status
